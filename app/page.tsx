@@ -6,17 +6,12 @@ import AdUnit from "@/components/AdUnit";
 import { medicamentos } from "@/lib/medicamentos";
 import styles from "./page.module.css";
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const med = getMedicamento(slug);
-  // ...
-}
-
-export default async function MedicamentoPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const med = getMedicamento(slug);
-  // ...
-}
+export const metadata: Metadata = {
+  title: "Buscar Medicamento Genérico: Compare com o de Referência | GenéricoOu",
+  description:
+    "Busque e compare medicamentos de referência com seus genéricos equivalentes no Brasil. Economize até 80% com genéricos aprovados pela ANVISA e com bioequivalência comprovada.",
+  alternates: { canonical: "https://genericoou.online/" },
+};
 
 const populares = medicamentos.slice(0, 9);
 
