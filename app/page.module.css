@@ -1,0 +1,121 @@
+.hero {
+  background: linear-gradient(160deg, #0369A1 0%, #0284C7 55%, #0EA5E9 100%);
+  padding: 4.5rem 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--bg);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.heroSub {
+  font-size: clamp(.95rem, 2vw, 1.15rem);
+  color: rgba(255,255,255,.88);
+  max-width: 540px;
+  margin-bottom: 2rem;
+  line-height: 1.65;
+}
+
+.heroSub strong { color: #fff; }
+
+.searchWrap {
+  width: 100%;
+  max-width: 640px;
+}
+
+.searchHint {
+  font-size: .8rem;
+  color: rgba(255,255,255,.65);
+  margin-top: .65rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  font-weight: 700;
+}
+
+.verTodos {
+  font-size: .9rem;
+  color: var(--primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.howSection {
+  background: var(--bg-subtle);
+  padding: 4rem 0;
+  margin-top: 1rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem;
+}
+
+.step {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--border-light);
+}
+
+.stepNum {
+  width: 2.2rem;
+  height: 2.2rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: .85rem;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+}
+
+.stepDesc {
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
