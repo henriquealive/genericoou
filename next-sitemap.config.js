@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: process.env.SITE_URL || "https://genericoou.com.br",
+  siteUrl: process.env.SITE_URL || "https://genericoou.online",
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: "weekly",
@@ -10,7 +10,7 @@ const config = {
       { userAgent: "*", allow: "/" },
     ],
     additionalSitemaps: [
-      "https://genericoou.com.br/sitemap.xml",
+      "https://genericoou.online/sitemap.xml",
     ],
   },
   additionalPaths: async (config) => {

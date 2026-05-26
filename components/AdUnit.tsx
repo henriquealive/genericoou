@@ -55,7 +55,7 @@ export default function AdUnit({
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"  /* substitua pelo seu ID */
+        data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-7999785083569252"}
         data-ad-slot={slot}
         data-ad-format={format}
         data-full-width-responsive="true"

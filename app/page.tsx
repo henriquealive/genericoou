@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Buscar Medicamento Genérico: Compare com o de Referência | GenéricoOu",
   description:
     "Busque e compare medicamentos de referência com seus genéricos equivalentes no Brasil. Economize até 80% com genéricos aprovados pela ANVISA e com bioequivalência comprovada.",
-  alternates: { canonical: "https://genericoou.com.br/" },
+  alternates: { canonical: "https://genericoou.online/" },
 };
 
 const populares = medicamentos.slice(0, 9);

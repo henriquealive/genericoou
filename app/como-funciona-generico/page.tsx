@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Como Funciona o Medicamento Genérico no Brasil — Bioequivalência ANVISA",
   description:
     "Entenda o que é um medicamento genérico, como a bioequivalência é comprovada pela ANVISA e por que o genérico tem a mesma eficácia do medicamento de referência.",
-  alternates: { canonical: "https://genericoou.com.br/como-funciona-generico/" },
+  alternates: { canonical: "https://genericoou.online/como-funciona-generico/" },
 };
 
 const faqs = [

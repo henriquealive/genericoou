@@ -5,7 +5,7 @@ import { medicamentos } from "@/lib/medicamentos";
 export const metadata: Metadata = {
   title: "Lista Completa de Medicamentos Genéricos no Brasil",
   description: `Consulte todos os ${medicamentos.length} medicamentos de referência e seus genéricos equivalentes aprovados pela ANVISA. Compare preços e fabricantes.`,
-  alternates: { canonical: "https://genericoou.com.br/medicamentos/" },
+  alternates: { canonical: "https://genericoou.online/medicamentos/" },
 };
 
 // Group by classeTerapeutica

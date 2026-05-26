@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title,
     description,
-    alternates: { canonical: `https://genericoou.com.br/medicamentos/${med.slug}/` },
+    alternates: { canonical: `https://genericoou.online/medicamentos/${med.slug}/` },
     openGraph: {
       title,
       description,
-      url: `https://genericoou.com.br/medicamentos/${med.slug}/`,
+      url: `https://genericoou.online/medicamentos/${med.slug}/`,
       type: "article",
     },
   };
@@ -41,7 +41,7 @@ export default function MedicamentoPage({ params }: { params: { slug: string } }
     "@type": "MedicalWebPage",
     name: `Genérico de ${med.referencia}`,
     description: `Informações sobre os genéricos equivalentes a ${med.referencia} (${med.principioAtivo}) aprovados pela ANVISA.`,
-    url: `https://genericoou.com.br/medicamentos/${med.slug}/`,
+    url: `https://genericoou.online/medicamentos/${med.slug}/`,
     about: {
       "@type": "Drug",
       name: med.principioAtivo,

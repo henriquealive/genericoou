@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Política de Privacidade — GenéricoOu",
   description: "Leia a política de privacidade do GenéricoOu. Informações sobre coleta, uso e proteção de dados dos usuários.",
-  alternates: { canonical: "https://genericoou.com.br/privacidade/" },
+  alternates: { canonical: "https://genericoou.online/privacidade/" },
   robots: { index: false, follow: false },
 };
 
@@ -65,7 +65,7 @@ export default function PrivacidadePage() {
           <h2 style={{ color: "var(--text)", marginBottom: ".5rem" }}>5. Contato</h2>
           <p>
             Para dúvidas sobre esta política de privacidade, entre em contato pelo e-mail:{" "}
-            <a href="mailto:contato@genericoou.com.br">contato@genericoou.com.br</a>
+            <a href="mailto:contato@genericoou.online">contato@genericoou.online</a>
           </p>
         </section>
 

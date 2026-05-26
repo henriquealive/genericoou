@@ -158,4 +158,3 @@ Após adicionar, rode `npm run build` para regenerar o sitemap e as páginas SSG
 - [x] next/font com `display=swap`
 - [x] SSG 100% — zero latência de servidor em produção
 - [x] AdSense em 3 posições (regra do quality score)
-# genericoou

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Sobre o GenéricoOu — Comparador de Medicamentos Genéricos no Brasil",
   description:
     "Saiba mais sobre o GenéricoOu, a plataforma gratuita para comparar medicamentos de referência com seus genéricos equivalentes aprovados pela ANVISA.",
-  alternates: { canonical: "https://genericoou.com.br/sobre/" },
+  alternates: { canonical: "https://genericoou.online/sobre/" },
 };
 
 export default function SobrePage() {

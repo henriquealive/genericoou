@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://genericoou.online";
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-7999785083569252";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -11,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://genericoou.com.br"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Buscar Medicamento Genérico: Compare com o de Referência | GenéricoOu",
     template: "%s | GenéricoOu",
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://genericoou.com.br",
+    url: SITE_URL,
     siteName: "GenéricoOu",
     title: "Buscar Medicamento Genérico: Compare com o de Referência | GenéricoOu",
     description:
@@ -54,17 +57,17 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://genericoou.com.br" },
+  alternates: { canonical: SITE_URL },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={inter.variable}>
       <head>
-        {/* AdSense — substitua ca-pub-XXXXXXXXXXXXXXXX pelo seu ID */}
+        {/* Google AdSense */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
         />
       </head>
